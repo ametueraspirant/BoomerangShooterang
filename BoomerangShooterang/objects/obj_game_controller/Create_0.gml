@@ -1,7 +1,30 @@
 /// @description Init Game
 
-global.move_up = ord("W");
-global.move_left = ord("A");
-global.move_down = ord("S");
-global.move_right = ord("D");
+// set up global inputs to be imported to local later
+global.up = ord("W");
+global.left = ord("A");
+global.down = ord("S");
+global.right = ord("D");
+global.dash = vk_lshift;
+global.fire = mb_left;
+global.secondary = vk_space;
+global.main_layer = "Instances";
+global.menu = vk_escape;
+global.debug = vk_f3;
 
+// randomise the game maker seed
+randomise();
+
+// enum to check game state
+enum game_state {
+	main,   // main menu
+	prep,   // pre game screen
+	go,     // during game
+	scores  // score board
+}
+
+// set a variable to the enum to check
+state = game_state.main;
+
+// set up the controllable camera object
+instance_create_layer(0, 0, global.main_layer, obj_camera);
