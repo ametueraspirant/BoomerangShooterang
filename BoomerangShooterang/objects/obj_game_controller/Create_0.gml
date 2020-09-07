@@ -16,7 +16,7 @@ global.debug = vk_f3;
 randomise();
 
 // enum to check game state
-enum game_state {
+enum gstate {
 	main,   // main menu
 	prep,   // pre game screen
 	go,     // during game
@@ -24,7 +24,8 @@ enum game_state {
 }
 
 // set a variable to the enum to check
-state = game_state.go;
+state = gstate.go;
+#macro _gamestate obj_game_controller.state
 
 // set up the controllable camera object
 instance_create_layer(0, 0, global.main_layer, obj_camera);

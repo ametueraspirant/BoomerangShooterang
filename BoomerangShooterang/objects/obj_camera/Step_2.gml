@@ -1,7 +1,7 @@
 /// @description Move Camera
 
 // a lotta math that basically drags the camera towards the player if it exists
-if(instance_exists(obj_player) && obj_game_controller.state = game_state.go) {
+if(instance_exists(obj_player) && _gamestate = gstate.go) {
 	var _x = clamp(obj_player.x - view_width / 2, 0, room_width - view_width);
 	var _y = clamp(obj_player.y - view_height / 2, 0, room_height - view_height);
 	
