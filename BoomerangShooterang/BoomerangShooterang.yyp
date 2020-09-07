@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"spr_player_test","path":"sprites/spr_player_test/spr_player_test.yy",},"order":0,},
     {"id":{"name":"obj_entity_parent","path":"objects/obj_entity_parent/obj_entity_parent.yy",},"order":1,},
     {"id":{"name":"obj_collider_parent","path":"objects/obj_collider_parent/obj_collider_parent.yy",},"order":2,},
     {"id":{"name":"obj_cursor","path":"objects/obj_cursor/obj_cursor.yy",},"order":2,},

@@ -24,7 +24,7 @@ enum game_state {
 }
 
 // set a variable to the enum to check
-state = game_state.main;
+state = game_state.go;
 
 // set up the controllable camera object
 instance_create_layer(0, 0, global.main_layer, obj_camera);
