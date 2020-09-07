@@ -1,7 +1,5 @@
 /// @description Run Game
 
-
-
 // if the game has started
 if(state = game_state.go) {
 	// check and spawn the player if they haven't been spawned in
