@@ -1,8 +1,8 @@
 /// @description Init Camera
 
-view_width = 1920/6;
-view_height = 1080/6;
-window_scale = 3;
+view_width = 1920/1.2;
+view_height = 1080/1.2;
+window_scale = 1;
 
 // set the window size
 window_set_size(view_width * window_scale, view_height * window_scale);

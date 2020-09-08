@@ -8,9 +8,11 @@ global.right = ord("D");
 global.dash = vk_lshift;
 global.fire = mb_left;
 global.secondary = vk_space;
-global.main_layer = "Instances";
 global.menu = vk_escape;
 global.debug = vk_f3;
+
+// except not this one this one's cool
+global.main_layer = "Instances";
 
 // randomise the game maker seed
 randomise();
